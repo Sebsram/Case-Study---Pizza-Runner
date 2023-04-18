@@ -59,3 +59,19 @@
 | 3           |
 
 Max number is 3
+
+**7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?**
+
+![a7](https://user-images.githubusercontent.com/130475600/232879699-e287a332-35a8-4c13-9554-27614fc7a198.PNG)
+
+| customer_id | min_one_change | no_change |
+| ----------- | -------------- | --------- |
+| 101         | 1              | 2         |
+| 102         | 1              | 1         |
+| 103         | 4              | 0         |
+| 104         | 3              | 0         |
+| 105         | 1              | 0         |
+
+**8. How many pizzas were delivered that had both exclusions and extras?**
+
+
