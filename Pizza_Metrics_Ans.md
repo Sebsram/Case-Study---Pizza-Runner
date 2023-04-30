@@ -72,6 +72,4 @@ Max number is 3
 | 104         | 3              | 0         |
 | 105         | 1              | 0         |
 
-**8. How many pizzas were delivered that had both exclusions and extras?**
-
 
