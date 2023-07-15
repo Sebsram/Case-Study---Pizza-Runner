@@ -58,3 +58,6 @@
 | 4        | 3            |
 | 3        | 2            |
 | 10       | 2            |
+
+**7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?**
+
