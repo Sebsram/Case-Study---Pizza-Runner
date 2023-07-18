@@ -61,3 +61,33 @@
 
 **7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?**
 
+![a7](https://github.com/Sebsram/Case-Study---Pizza-Runner/assets/130475600/546ea4f6-291b-40e3-ad86-c11b73f56d39)
+
+| customer_id | pizzas_with_change | pizzas_without_change |
+| ----------- | ------------------ | --------------------- |
+| 101         | 1                  | 2                     |
+| 103         | 4                  | 0                     |
+| 104         | 3                  | 0                     |
+| 105         | 1                  | 0                     |
+| 102         | 1                  | 2                     |
+
+**8. How many pizzas were delivered that had both exclusions and extras?**
+
+![a8](https://github.com/Sebsram/Case-Study---Pizza-Runner/assets/130475600/3d5d440b-5f0b-4d1f-8fd0-25f44ff556e7)
+
+| customer_id | pizza_with_changes |
+| ----------- | ------------------ |
+| 103         | 1                  |
+| 104         | 1                  |
+| 101         | 0                  |
+| 105         | 0                  |
+| 102         | 0                  |
+
+**9. What was the total volume of pizzas ordered for each hour of the day?**
+
+![a9](https://github.com/Sebsram/Case-Study---Pizza-Runner/assets/130475600/4e22ea89-3e2c-403a-a0ba-30120807eb69)
+
+**10. What was the volume of orders for each day of the week?**
+
+![a10](https://github.com/Sebsram/Case-Study---Pizza-Runner/assets/130475600/ab9ded16-7ce7-4119-9a0d-fcedf3159b32)
+
