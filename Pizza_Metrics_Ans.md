@@ -87,6 +87,27 @@
 
 ![a9](https://github.com/Sebsram/Case-Study---Pizza-Runner/assets/130475600/4e22ea89-3e2c-403a-a0ba-30120807eb69)
 
+
+```SQL
+WITH pizza_counter as (
+  SELECT co.customer_id,
+  	CASE
+  		WHEN co.excl_cleaned LIKE '%' OR co.ext_cleaned LIKE '%' THEN 1
+  		ELSE 0
+  	END AS change_count,
+  	CASE
+  		WHEN co.excl_cleaned IS NULL AND co.ext_cleaned IS NULL THEN 1
+  		WHEN co.excl_cleaned IS NULL AND co.ext_cleaned = 'NaN' THEN 1
+  		ELSE 0
+  	END AS no_change_count
+  	FROM cust_orders AS co LEFT JOIN runner_orders_cleaned AS roc
+  		ON co.order_id = roc.order_id)
+
+SELECT customer_id, SUM(change_count) AS pizzas_with_change, SUM(no_change_count) AS pizzas_without_change
+FROM pizza_counter
+GROUP BY customer_id
+```
+
 **10. What was the volume of orders for each day of the week?**
 
 ![a10](https://github.com/Sebsram/Case-Study---Pizza-Runner/assets/130475600/ab9ded16-7ce7-4119-9a0d-fcedf3159b32)
