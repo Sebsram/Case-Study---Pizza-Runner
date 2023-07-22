@@ -92,7 +92,8 @@
 WITH pizza_counter as (
   SELECT co.customer_id,
   	CASE
-  		WHEN co.excl_cleaned LIKE '%' OR co.ext_cleaned LIKE '%' THEN 1
+  		WHEN co.excl_clea
+    LIKE '%' OR co.ext_cleaned LIKE '%' THEN 1
   		ELSE 0
   	END AS change_count,
   	CASE
